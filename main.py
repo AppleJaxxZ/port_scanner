@@ -1,5 +1,5 @@
 from tkinter import *
-from script import *
+from script import *  # this file contains port_scanner()
 
 
 class MyWindow:
@@ -16,7 +16,7 @@ class MyWindow:
     def scan(self):
         address = str(self.txtfld1.get())
         print(address)
-        port_scanner(address)
+        print(port_scanner(address))
 
 
 window = Tk()
